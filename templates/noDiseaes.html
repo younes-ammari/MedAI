@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Green Icon</title>
+
+  <link rel="stylesheet" type="text/css" href="detect.css">
+  <link rel="stylesheet" type="text/css" href="detect-form.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="image-container">
+      <img src="./green_icon.png" alt="Red Icon" class="colored-image">
+    </div>
+
+    <script>
+        function redirectToImage() {
+          window.open("https://cdn.discordapp.com/attachments/1124509895157366906/1124622660270293012/medAi_2.png", "_blank");
+        }
+      </script>
+
+    <div class="text-container">
+      <p class="sorry-text"> No Disease  <br>
+         Thank You !</p>
+         <br><br>
+      <button id="showFormButton" onclick="redirectToImage()">End</button>
+      <div id="imageContainer"></div>
+    </div>
+  
+    
+
+
+  <script>
+    var showFormButton = document.getElementById("showFormButton");
+    showFormButton.addEventListener("click", function() {
+      var formContainer = document.getElementById("formContainer");
+      formContainer.classList.remove("hidden");
+      var textContainer = document.querySelector(".text-container");
+      textContainer.style.display = "none";
+    });
+  </script>
+
+  
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detect</title>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- <link rel="stylesheet" href="info.css"> -->
+  <link rel="stylesheet" href="/static/css/detect.css">
+</head>
+
+<body>
+  <div class="center">
+    <a href="/">
+      <img src="/static/images/logo.png" class="img">
+    </a>
+    <div class="container">
+
+      <figure class="image-container">
+        <img id="chosen-image" src="">
+
+      </figure>
+      <form id="uploadForm" enctype="multipart/form-data">
+        <input type="file" name="file" id="upload" accept="image/*">
+        <label for="upload"> choose a Photo</label>
+      </form>
+    </div>
+
+    <div id="loading-spinner" class="spinner">
+      <i class="fas fa-spinner fa-spin"></i>
+      <p>detecting ...</p>
+    </div>
+  
+    <!-- Add a container for the result -->
+    <div id="result-container"></div>
+  
+    <!-- Add a container for the error message -->
+    <div id="error-container"></div>
+  </div>
+  <button onclick="detectFunction()" class="resultButton"> see result
+    <span class="material-symbols-outlined">
+      chevron_right
+    </span></button>
+
+
+  <div>
+    <p>{{ json_response }}</p>
+  </div>
+
+  
+
+  <script src="/static/js/detect.js"></script>
+</body>
+
+</html>

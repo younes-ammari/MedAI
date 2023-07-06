@@ -1,0 +1,131 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 100vw;
+    padding-top: 55px;
+    padding-bottom: 55px;
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* padding-top: 22px; */
+    background: #061A1F;
+    align-self: center;
+    justify-self: center;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.center {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    padding: 22px 22px;
+    width: fit-content;
+    /* position: absolute; */
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}
+
+h1 {
+    /* color: #89A6C9; */
+    font-size: 32px;
+    font-weight: 700;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.label {
+    color: #000;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 15px;
+    /* line-height: normal; */
+
+}
+
+input {
+    width: 326px;
+    height: 50px;
+    padding: 0px 8px;
+    border-radius: 4px;
+    margin-bottom: 12px;
+    margin-top: 8px;
+    background-color: #dae3ef;
+    border: 1px solid #89A6C9;
+
+}
+
+.btn_div * {
+    margin: 0px;
+    /* padding: 0px; */
+}
+
+.btn_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 22px;
+    width: 100%;
+
+}
+
+button {
+    background-color: #061A1F;
+    border-radius: 8px;
+    color: #FFF;
+    font-size: 18px;
+    padding: 15px 51px;
+    cursor: pointer;
+    opacity: .9;
+    /* width: 270px;
+    height: 95px; */
+    /* font-weight: 400; */
+
+}
+button:hover{
+    opacity: 1;
+}
+
+a {
+    color: #061A1F;
+    font-size: 15px;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.singup_link{
+    padding-top: 11px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+h3{
+    color: #061A1F;
+    font-size: 15px;
+    opacity: .7;
+    font-style: normal;
+    font-weight: 500;
+    padding-right: 4px;
+
+}
+
+.img{
+    height: 100px;
+    width: auto;
+    margin-bottom: 33px;
+}

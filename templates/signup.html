@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up</title>
+    <link rel="stylesheet" href="/static/css/sign.css">
+</head>
+
+<body>
+    <a href="/">
+
+        <img src="/static/images/logo.png" class="img">
+    </a>
+    <div class="center">
+        <h1>Sign up</h1>
+        <form action="dashboard" method="post">
+            <label class="label" for="User">User</label><br>
+            <input id="User" type="text" placeholder="Please enter your user name"> <br>
+
+            <label class="label" for="E-mail">E-mail</label><br>
+            <input id="E-mail" type="text" placeholder="Please enter your email"> <br>
+
+            <label class="label" for="password">password</label><br>
+            <input id="password" type="password" placeholder="Please enter your password"><br>
+
+            <label class="label" for="Confirm"> Confirm password</label><br>
+            <input id="confirm" type="password" placeholder="Please confirm your password "><br>
+            <div class="btn_div">
+
+                <button id="btn" onclick="location.href='welcome.html';">sign up</button>
+                <div class="singup_link">
+                    <h3> Already a member?
+                    </h3>
+                    <a href="/signin">sing in here</a>
+                </div>
+            </div>
+
+    </div>
+
+</body>
+
+</html>

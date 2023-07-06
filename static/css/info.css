@@ -1,0 +1,171 @@
+ *{
+    
+        margin: 0;
+        padding: 0;
+        background: #061A1F;
+        
+    
+}
+
+
+
+.center{ 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   }
+
+
+   div .info{
+   
+    color:aliceblue;
+    font-size: 20px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+div .info input {
+    width: 310px;
+    height: 51px;
+    flex-shrink: 0;
+    background: #7B9EBA;
+    border-radius: 12px;
+}
+
+
+ div img{
+    width: 330px; 
+    position: relative;
+    top:30px;
+    right: 10px;
+    
+ }
+
+button{
+    background-color:#58B2C9; 
+    width: 270px;
+    height: 95px;
+    flex-shrink: 0;
+    border: none;
+    color: white;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 12px;
+    position: relative;
+    top: 35px;
+    left: 25px;
+}
+
+.container{
+    width: 60%;
+    min-width: 450px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 20px 20px;
+    box-shadow:0 20px 35px rgb(18, 139, 237);
+    border-radius:10%; ;
+  }
+  .image-container{
+    width: 100%;
+    margin: 0 auto 30px auto;
+  }
+  
+  .image-container img{
+    display: block;
+    position: relative;
+    max-width: 100%;
+    max-height: 400px;
+    margin: auto;
+  }
+  
+  input[type= "file"]{
+    display: none;
+  }
+  
+  .container label{
+    display: block;
+    position: relative;
+    top: 10px;
+    right: 5px;
+    background-color:#58B2C9 ;
+    color: #000;;
+    font-size:18px;
+    text-align: center;
+    width: 300px;
+    padding: 18px 0;
+    border-radius: 5px;
+    margin: auto;
+    cursor: pointer;
+  }
+  
+  a{
+    position: absolute;
+    top: 90%;
+    left: 90%;
+    color: #58B2C9;
+    font-size: 20px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    
+
+  }
+ a:hover{
+    color: red;
+ }
+
+
+@media screen and (max-width:390px) {
+
+    .center{
+        position: absolute;
+        top: 35%;
+        left: 40%;
+        transform: translate(-35%, -35%);
+
+    }
+
+
+    button {
+        background-color:#58B2C9; 
+        width: 270px;
+        height: 95px;
+        flex-shrink: 0;
+        border: none;
+        color: white;
+        padding: 10px 22px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 30px;
+        border-radius: 12px;
+        position: relative;
+        bottom: 100px;
+        left: 20px;
+    
+    }
+    a{
+        position: absolute;
+        top: 90%;
+        left: 70%;
+        color: #58B2C9;
+        font-size: 20px;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-decoration: none;
+        
+    
+      }
+}

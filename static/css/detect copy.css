@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #496474;
+}
+
+.image-container {
+  margin-right: -50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.colored-image {
+  display: block;
+  margin: 0 auto;
+}
+.text-container {
+  text-align: center;
+}
+
+body {
+  background-color:  #496474;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Red Icon</title>
+
+  <style>
+    .hidden {
+      display: none;
+    }
+  </style>
+
+  <link rel="stylesheet" type="text/css" href="detect.css">
+  <link rel="stylesheet" type="text/css" href="sign (1).css">
+</head>
+
+<center>
+<body>
+  <div class="container">
+    <div class="image-container">
+      <img src="red_icon.png" alt="Red Icon" class="colored-image">
+    </div>
+    <div class="text-container">
+      <p>Sorry to say!</p>
+      <p>Disease has been detected.</p>
+      <button onclick="showForm()">Click Here</button>
+    </div>
+  </div>
+
+  <div id="formContainer" class="center hidden">
+    <h1>Disease Detected</h1>
+    <form action="contactform." method="post">
+      <label for="User">Kind of disease</label><br>
+
+      <input id="User" type="text" placeholder=""><br>
+
+      <label for="E-mail">Period of disease spread</label><br>
+      <input id="E-mail" type="text" placeholder=""><br>
+
+      <label for="password">The right medicine</label><br>
+      <input id="password" type="password" placeholder=""><br>
+
+
+      <button id="btn" onclick="location.href='welcome.html';"></button>
+    </form>
+  </div>
+
+  <script>
+    function showForm() {
+      var formContainer = document.getElementById("formContainer");
+      formContainer.classList.toggle("hidden");
+    }
+  </script>
+</body>
+</center>
+</html>

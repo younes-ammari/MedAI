@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Red Icon</title>
+
+  <link rel="stylesheet" type="text/css" href="detected.css">
+  <link rel="stylesheet" type="text/css" href="detect-form.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="image-container">
+      <img src="./red_icon-new.png" alt="Red Icon" class="colored-image">
+    </div>
+
+    <div class="text-container">
+      <p class="sorry-text">Sorry to say!</p>
+      <p class="disease-text">Disease has been detected.</p>
+      <button id="showFormButton">Click Here</button>
+    </div>
+  
+    
+    <div id="formContainer" class="center hidden">
+      <form action="https://www.google.com/maps/search/Nahdi+Pharmacy/@21.5349688,39.2280073,14z/data=!3m1!4b1?entry=ttu">
+        <label for="diseaseType">Type of disease</label><br>
+        <input id="diseaseType" type="text" placeholder="Enter the type of disease here"><br>
+
+        <label for="diseasePeriod">Period of disease spread</label><br>
+        <input id="diseasePeriod" type="text" placeholder="Enter the period of disease spread here"><br>
+
+        <label for="medicine">Recommended medicine</label><br>
+        <input id="medicine" type="text" placeholder="Enter the recommended medicine here"><br>
+
+        <p class="medicine-text"> For Medicine places : </p>
+
+        <button id="btn" type="submit"> Check the Map </button>
+      </form>
+    </div>
+    
+    
+    
+  </div>
+
+  <script>
+    var showFormButton = document.getElementById("showFormButton");
+    showFormButton.addEventListener("click", function() {
+      var formContainer = document.getElementById("formContainer");
+      formContainer.classList.remove("hidden");
+      var textContainer = document.querySelector(".text-container");
+      textContainer.style.display = "none";
+    });
+  </script>
+
+  
+</body>
+</html>

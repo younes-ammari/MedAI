@@ -1,0 +1,111 @@
+* {
+	box-sizing: border-box;
+  }
+  
+.hidden {
+	display: none;
+  }
+  
+  
+  * {
+	box-sizing: border-box;
+  }
+  
+  body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	background-color: #f2f2f2;
+  }
+  
+  .container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+  }
+  
+  .text-container {
+	text-align: center;
+	margin-bottom: 30px;
+  }
+  
+  .sorry-text {
+	font: 40px bold Arial, sans-serif;
+	color: #f9f6f6;
+	margin: 0;
+  }
+  
+  .disease-text {
+	font: 30px Arial, sans-serif;
+	color: #f8f5f5;
+	margin-bottom: 0;
+  }
+  
+  .medicine-text {
+	font: 20px Arial, sans-serif;
+	color: #0c0c0c;
+	margin-bottom: 0;
+  }
+
+  button {
+	background-color: #e74c3c;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	font: 20px bold Arial, sans-serif;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.2s ease;
+  }
+  
+  button:hover {
+	background-color: #c0392b;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+	padding: 10px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	border: none;
+	font: 18px Arial, sans-serif;
+  }
+  
+  input[type="text"]:focus,
+  input[type="password"]:focus {
+	outline: none;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  label {
+	font: 25px bold Arial, sans-serif;
+	color: #555;
+	margin-bottom: 10px;
+  }
+  
+  #formContainer {
+	background-color: rgb(201, 197, 197);
+	padding: 40px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(233, 222, 222, 0.2);
+	max-width: 400px;
+	width: 100%;
+  }
+  
+  .footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #fff;
+	padding: 20px;
+	font: 18px bold Arial, sans-serif;
+	color: #555;
+	text-align: center;
+  }
+
+  body {
+    background-color: #496474;
+  } 
