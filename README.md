@@ -30,9 +30,16 @@ MedAI is a Flask application that utilizes AI algorithms to detect skin diseases
 ## Getting Started
 
 ### Prerequisites
+Make sure you have the following dependencies installed before running the project:
 
 - Python 3.7 or above
 - Flask
+- Pillow==5.4.1
+- gevent==1.4.0
+- gunicorn==19.9.0
+- keras==2.10.0
+- tensorflow==2.10.0
+- numpy
 
 ### Installation
 
