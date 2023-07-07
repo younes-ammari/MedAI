@@ -1,4 +1,4 @@
-# MedAI - Disease Detection and Treatment Susceptibility by AI
+# <img src="/static/images/icon.png" alt="App Icon" width="50" height="50"> MedAI - Skin Disease Detection and Treatment Susceptibility by AI
 
 MedAI is a Flask application that utilizes AI algorithms to detect diseases and provide treatment susceptibility for patients. It offers an intelligent system that analyzes patient data and provides valuable insights for effective disease diagnosis and treatment planning.
 
