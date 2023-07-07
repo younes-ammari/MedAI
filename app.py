@@ -39,6 +39,22 @@ def signup():
 def dashboard():
     return render_template('dashboard.html')
 
+def findMedicine(pred):
+    if pred == 0:
+        return "fluorouracil"
+    elif pred == 1:
+        return "Aldara"
+    elif pred == 2:
+        return "Prescription Hydrogen Peroxide"
+    elif pred == 3:
+        return "fluorouracil"
+    elif pred == 4:
+        return "fluorouracil (5-FU):"
+    elif pred == 5:
+        return "fluorouracil"
+    elif pred == 6:
+        return "fluorouracil"        
+
 
 @app.route('/detect', methods=['GET', 'POST'])
 def detect():
@@ -53,55 +69,43 @@ def detect():
                 'message': 'file is not valid'
             }), 400)
 
-
-        # body = request.form
-        # print(file)
-        # return json_response({
-        #     "result":file
-        # })
-        # f = request.files['file']
-
         imagePil = Image.open(io.BytesIO(file.read()))
         # Save the image to a BytesIO object
         imageBytesIO = io.BytesIO()
         imagePil.save(imageBytesIO, format='JPEG')
         imageBytesIO.seek(0)
-        # path = 'static/data/'+f.filename
         print("detected ")
         path = imageBytesIO
-        # return render_template('detect.html', title='Success', json_response=json_response, predictions=disease, acc=accuracy, img_file=f.filename)
-        # return render_template('detect.html', title='Success')
-        # f.save(path)
         j_file = open('model.json', 'r')
         loaded_json_model = j_file.read()
         j_file.close()
         model = model_from_json(loaded_json_model)
         model.load_weights('model.h5')
-        # img1 = image.load_img(f, target_size=(224,224))
-        img1 = image.load_img(path, target_size=(224, 224))
-        img1 = np.array(img1)
-        img1 = img1.reshape((1, 224, 224, 3))
-        img1 = img1/255
-        prediction = model.predict(img1)
+        img = image.load_img(path, target_size=(224, 224))
+        img = np.array(img)
+        img = img.reshape((1, 224, 224, 3))
+        img = img/255
+        prediction = model.predict(img)
         pred = np.argmax(prediction)
         disease = SKIN_CLASSES[pred]
         accuracy = prediction[0][pred]
         accuracy = round(accuracy*100, 2)
-        # K.clear_session()
+        medicine=findMedicine(pred)
+
         json_response = {
             "detected": False if pred == 2 else True,
             "disease": disease,
             "accuracy": accuracy,
+            "medicine" : medicine,
             "img_path": file.filename,
+
         }
 
         return make_response(jsonify(json_response), 200)
 
-    # return render_template('detect.html', title='Success', json_response=json_response, predictions=disease, acc=accuracy)
     else:
         return render_template('detect.html')
 
 
 if __name__ == "__main__":
-    # app.run(debug=True, port=5500)
     app.run(debug=True, port=3000)

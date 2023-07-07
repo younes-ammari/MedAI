@@ -23,6 +23,7 @@ body {
     background: #061A1F;
     align-self: center;
     justify-self: center;
+    overflow-x: hidden;
 }
 
 
@@ -222,7 +223,41 @@ input[type="file"] {
     /* padding: 11px 22px; */
 }
 
+.mapButton {
+    /* position: absolute; */
+    bottom: 5%;
+    right: 5%;
+    background-color: transparent;
+    border: 0px solid red;
+    color: #58B2C9;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 22px;
+    text-decoration: none;
+    /* padding: 11px 22px; */
+    transition: 11ms;
 
+
+}
+
+.mapButton:hover {
+    /* color: #061A1F; */
+    color: #FFFFFF;
+    /* font-weight: 700; */
+    /* padding: 11px 33px; */
+}
+
+.mapButton {
+    /* background-color: aliceblue; */
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* padding: 11px 22px; */
+}
 
 .img {
     height: 100px;

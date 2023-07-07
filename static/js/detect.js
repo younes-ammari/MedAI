@@ -52,9 +52,29 @@ function displayResponse(response) {
   accuracyElement.style.color = 'white';
   accuracyElement.style.marginTop = '7px';
 
+  // Create the medicine element
+  var medicineElement = document.createElement('p');
+  medicineElement.textContent = 'Medicine: ' + response.medicine;
+  medicineElement.style.color = 'white';
+  medicineElement.style.marginTop = '7px';
+
   // Append the elements to the container
   resultContainer.appendChild(diseaseElement);
   resultContainer.appendChild(accuracyElement);
+  resultContainer.appendChild(medicineElement);
+
+  var mapButton = document.createElement("button");
+  mapButton.className = "mapButton"; 
+  mapButton.innerHTML = "Look for Clinics";
+  var body = document.getElementsByTagName("body")[0];
+  body.appendChild(mapButton);
+
+  mapButton.addEventListener ("click", function() {
+  //window.open(map.html);
+  window.open('https://www.google.com/maps/search/Pharmacies');
+  });
+
+  //document.getElementById(results).hidden=true;
 }
 
 function displayError(message) {
