@@ -15,6 +15,18 @@ MedAI is a Flask application that utilizes AI algorithms to detect skin diseases
 - User-Friendly Interface: MedAI offers an intuitive and easy-to-use interface, making it accessible for both medical professionals and patients.
 - Data Privacy and Security: MedAI prioritizes data privacy and security, ensuring that patient information is handled with the utmost confidentiality and adheres to industry standards.
 
+
+## Authors
+
+- [Younes Ammari](https://github.com/younes-ammari)
+- Rawan Reda
+- Alma Nizar
+- Samar Hawsawi
+- Linda Almakramy
+- Thourya Musa
+
+
+
 ## Getting Started
 
 ### Prerequisites
