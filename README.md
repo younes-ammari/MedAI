@@ -32,9 +32,9 @@ MedAI is a Flask application that utilizes AI algorithms to detect skin diseases
 
 
 ## Contributors
-| [<img src="https://github.com/younes-ammari.png?size=100" width="100" height="100">](https://github.com/younes-ammari) | [<img src="https://github.com/rawan-reda.png?size=100" width="100" height="100">](https://github.com/rawan-reda) | [<img src="https://github.com/Al-codeing.png?size=100" width="100" height="100">](https://github.com/Al-codeing) | [<img src="https://github.com/Simo0o36.png?size=100" width="100" height="100">](https://github.com/Simo0o36) | [<img src="https://github.com/lindamakk.png?size=100" width="100" height="100">](https://github.com/lindamakk) | [<img src="https://github.com/thourya-musa.png?size=100" width="100" height="100">](https://github.com/thourya-musa) |
+| [<img src="https://github.com/younes-ammari.png?size=100" width="100" height="100">](https://github.com/younes-ammari) | [<img src="https://github.com/rawan-reda.png?size=100" width="100" height="100">](https://github.com/rawan-reda) | [<img src="https://github.com/Al-codeing.png?size=100" width="100" height="100">](https://github.com/Al-codeing) | [<img src="https://github.com/Simo0o36.png?size=100" width="100" height="100">](https://github.com/Simo0o36) | [<img src="https://github.com/lindamakk.png?size=100" width="100" height="100">](https://github.com/lindamakk) | [<img src="https://github.com/thomusa.png?size=100" width="100" height="100">](https://github.com/thomusa) |
 | --- | --- | --- | --- | --- | --- |
-| [Younes Ammari](https://github.com/younes-ammari) | [Rawan Reda](https://github.com/rawan-reda) | [Alma Nizar](https://github.com/Al-codeing) | [Samar Hawsawi](https://github.com/Simo0o36) | [Linda Almakramy](https://github.com/lindamakk) | [Thourya Musa](https://github.com/thourya-musa) |
+| [Younes Ammari](https://github.com/younes-ammari) | [Rawan Reda](https://github.com/rawan-reda) | [Alma Nizar](https://github.com/Al-codeing) | [Samar Hawsawi](https://github.com/Simo0o36) | [Linda Almakramy](https://github.com/lindamakk) | [Thourya Musa](https://github.com/thomusa) |
 
 ## Getting Started
 
