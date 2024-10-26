@@ -80,6 +80,11 @@ Make sure you have the following dependencies installed before running the proje
 ## Contact
 For any inquiries or feedback, please contact us at dev.younes.ammari@gmail.com.
 
+## Resources:
+https://arxiv.org/ftp/arxiv/papers/1907/1907.03220.pdf
+
+https://www.kaggle.com/vbookshelf/skin-lesion-analyzer-tensorflow-js-web-app
+
 ## Website
 Visit the MedAI website for more information and live demos.
 
