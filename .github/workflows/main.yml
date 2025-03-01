@@ -1,0 +1,30 @@
+name: Update README Daily
+
+on:
+  schedule:
+    - cron: "0 0 * * *"  # Runs every day at midnight UTC
+  workflow_dispatch:  # Allows manual trigger
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Update README.md
+        run: |
+          TODAY=$(date +"%a %b %d %Y")
+          DAYS_LEFT=$(( ( $(date -d "Dec 31" +%s) - $(date +%s) ) / 86400 ))
+          
+          sed -i "s/Last update on .*/Last update on $TODAY/" README.md
+          sed -i "s/[0-9]\+ day before 2026 ⏱.*/**$DAYS_LEFT day before 2026 ⏱** days before new years/" README.md
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "younes-ammari"
+          git config --global user.email "retcheryounes@gmail.com"
+          git add README.md
+          git commit -m "📝 README.md updated by YonBot"
+          git push
