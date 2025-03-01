@@ -79,4 +79,12 @@ For any inquiries or feedback, please contact us at dev.younes.ammari@gmail.com.
 ## Website
 Visit the MedAI website for more information and live demos.
 Check out the live demo: [https://medai.onrender.com](https://medai.onrender.com)
+
+
+
+Last update on <#today_date>
+
+<#day_before_new_years> days before new years
+
+<#gabot_signing>
 `;
