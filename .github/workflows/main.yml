@@ -24,6 +24,17 @@ jobs:
           node index.js > README.md
         env:
           CI: true
+      - name: Set up Git authentication
+        run: |
+          git remote set-url origin https://younes-ammari:${{ secrets.GH_PAT }}@github.com/younes-ammari/MedAI.git
+      - name: commit changes
+        uses: EndBug/add-and-commit@v4
+        with:
+          author_name: younes-ammari
+          author_email: dev.younes.ammari@gmail.com
+          message: ':memo: README.md updated by Gabot'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
       - name: commit changes
         uses: EndBug/add-and-commit@v4
         with:
