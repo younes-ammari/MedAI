@@ -3,7 +3,7 @@ name: Update README Daily
 on:
   schedule:
     - cron: "0 0 * * *"  # Runs every day at midnight UTC
-  workflow_dispatch:  # Allows manual trigger
+  workflow_dispatch:
 
 jobs:
   update-readme:
@@ -16,9 +16,6 @@ jobs:
       - name: Update README.md
         run: |
           TODAY=$(date +"%a %b %d %Y")
-          DAYS_LEFT=$(( ( $(date -d "Dec 31" +%s) - $(date +%s) ) / 86400 ))
-          
-          # Update the last updated date
           sed -i "s|Last update on: .*|Last update on: $TODAY|" README.md
 
           # Ensure there is a change
@@ -28,9 +25,11 @@ jobs:
           fi
 
       - name: Commit and push changes
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
         run: |
           git config --global user.name "younes-ammari"
           git config --global user.email "dev.younes.ammari@gmail.com"
           git add README.md
           git commit -m "📝 README.md updated by GitHub Action"
-          git push
+          git push https://younes-ammari:$GH_PAT@github.com/younes-ammari/MedAI.git main
